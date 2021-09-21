@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Poke Search</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="main.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+</head>
+  <body>
+
+    <div class="container flex-center">
+      <h1>Poke Search</h1>
+      <div class="search-container col-md-5 col-sm-5">
+        <input type="text" class="form-control" id="search_q" placeholder="Search pokemon by name">
+        <button class="btn-search" id="search-btn">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div id="show_error" class="hidden alert alert-danger alert-dismissible fade" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+          <span class="sr-only">Close</span>
+        </button>
+        <strong>Not found!</strong> 
+      </div>
+      
+          <!-- <div class="img-container">
+              <img id="update_img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="" srcset="">
+          </div>
+          <div class="detail-container">
+              <div class="title-container">
+                  <h3 class="name text-center" id="update_name">Pikachu</h3>
+                  <hr class="seperator">
+                  <div class="stats text-center">
+                      <span class="first cp-text col-md-6" id="update_hp">HP 32/32</span>
+                      <span class="cp-text col-md-6" id="update_cp">XP 149</span>
+                  </div>
+              </div>
+              <button class="btn-transfer">TRANSFER</button>
+              <div class="attributes-container">
+                  <div class="col attributes-content" style="min-width: 42%;">
+                      <p class="cp-text" id="update_type">Electric / Speed</p>
+                      <small class="text-muted">Type</small>
+                  </div>
+                  <div class="col attributes-content">
+                    <p class="cp-text" id="update_weight">5.58kg</p>
+                    <small class="text-muted">Weight</small>
+                  </div>
+                  <div class="col attributes-content">
+                    <p class="cp-text no-border" id="update_height">0.82m</p>
+                    <small class="text-muted">Height</small>
+                  </div>
+              </div>
+              <div class="player-data">
+                  <div class="col data-container">
+                  <p class="stardust" id="update_stardust">500</p>
+                  <p class="muted-text">Stardust</p>
+                  </div>
+                  <div class="col data-container">
+                  <p class="stardust" id="update_candy">1</p>
+                  <p class="muted-text" id="update_candy_title">Pikachu Candy</p>
+                  </div>
+              </div>
+          </div> -->
+
+          <!-- <div class="img-container">
+            <img id="update_img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="" srcset="">
+         </div> -->
+          <div class="info"></div>
+            <p id="update_name">Pikachu</p>
+            <p id="update_hp">HP 32/32</p>
+            <p id="update_cp">XP 149</p>
+            <p id="update_height">0.82m</p>
+            <p id="update_stardust">500</p>
+          </div>
+      
+    </div>
+      
+
+    <script src="pokemon-data.js"></script>
+  </body>
+</html>
